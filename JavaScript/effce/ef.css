@@ -1,0 +1,72 @@
+.menutrai {
+    background: #28a745;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    z-index: 2;
+
+}
+.menutrai.vetrai{
+    transform: translateX(-100%);
+     
+
+}
+.noidungto {
+    height: 100%;
+    transition: 0.4s;
+    padding-top: 10%;
+    box-sizing: border-box; 
+    /* no giup k cho thay doi do rong vd 100 + 10 = 100% */
+
+}
+.nut {
+    width: 100px;
+    margin-left: 400px;
+    margin-right: auto;
+    display: block;
+}
+li.list-group-item {
+    background: none;
+    text-transform: uppercase;
+    color: white;
+}
+h3.display-3.text-center {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+}
+.nenden{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.42);
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 350px;
+    
+
+}
+.len{
+    opacity: 1;
+    visibility: visible;
+}
+.dichphai{
+    transform: translateX(350px);
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; 
+    /* thuoc tinh nay giup an thanh cuon ngang */
+}

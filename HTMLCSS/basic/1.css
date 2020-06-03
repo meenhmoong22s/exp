@@ -1,0 +1,285 @@
+.layerxoay{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    /* layer chính */
+}
+.layerxoay .xoay{
+    width: 450px;
+    height: 450px;
+   /* combo 3 thuộc tính chia layer */
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    transition: 50s;
+
+}
+
+.layerxoay:hover .xoay{
+    transform: rotate(36000deg);
+    /* deg = độ */
+    /* thuộc tính xoay trong css */
+}
+.layerxoay .girl{
+    width: 350px;
+    height: 350px;
+   /* combo 3 thuộc tính chia layer */
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    transition: 0.4s;
+    opacity: 0.2;
+}
+.bo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* layer mốc */
+
+}
+.bo .lop1{
+    width: 200px;
+    height: 200px;
+    /* layer con (lớp con) */
+}
+.bo .lop2{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    opacity: 0;
+
+    position: absolute;
+    top: 0; left: 0;
+    /* layer con (lớp con) */
+    /* combo 3 thuộc tính chia layer */
+    transition: 0.4s;
+}
+.bo:hover .lop2{    
+    opacity: 0.4;
+}
+
+.bo .lop3{
+    color: white;
+    font-size: 40px;
+    /* layer con (lớp con) */
+    position: absolute;
+    top: 75px; left: 85px;
+    /* combo 3 thuộc tính chia layer */
+    opacity: 0;
+    transition: 0.4s;
+    transform: scale(0);
+    /* thuộc tính zoom : zoom về 0 */
+
+}
+.bo:hover .lop3{
+    opacity: 0.7;
+    transform: scale(1);
+    /* zoom về 1 trạng thái ban đầu */
+}
+
+
+
+
+
+.khung{
+    width: 900px;
+    height: 300px;
+    background-image: url(https://salt.tikicdn.com/cache/w584/ts/banner/45/f2/c9/e8e7c422d8e4335f969673328388223d.png);
+    margin: auto;
+    /* cách căn ngang số 1 */
+    /* text-align: center; */
+    /* cách căn ngang số 2 */
+    display: flex;
+    justify-content: center;
+    /* combo 3 thuộc tính */
+    /* căn dọc */
+    align-items: center;
+
+}
+
+.khung .noidung {
+    color: gold;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: gold 2px solid;
+}
+
+
+h2{
+    color: rgb(28, 56, 0);
+    /* màu chữ */
+    margin-left:300px ;
+    /* canh khoảng cách xung quanh */
+    width: 550px;
+    font-family: segoe ui;
+    /* font chữ */
+}
+h3.vd2{
+    width: 520px;
+    color: rgb(17, 17, 17);
+    margin-left: 320px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p.vd2{
+    width: 630px;
+    margin-left: 320px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul.vd2{
+    width: 560px;
+    color: gray;
+    margin-left: 320px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    /* cỡ chữ */
+}
+/* hr. dùng để gọi class */
+hr.call{
+    margin-left: 320px;
+    width: 900px;
+    /* độ rộng */
+}
+hr.goi{
+    margin-left: 320px;
+    width: 260px;
+    /* độ rộng */
+}
+hr{
+
+    margin-left: 320px;
+    width: 600px;
+    /* độ rộng */
+}
+/* div.lopbo{
+    display: flex;
+    thuộc tính chia cột trong css
+    mà như ... vậy
+} */
+
+
+img.conone{
+    margin-left: 320px;
+    width: 200px;
+    /* cách số 1 để set thuộc tính từng thẻ h,p,..
+nhưng khá mệt nếu có quá nhiều thẻ h,p đặt class
+*/
+
+}
+img.contwo{
+    width: 400px;
+    height: 156.5px;
+    /* cách số 1 để set thuộc tính từng thẻ h,p,..
+
+*/
+}
+.boss-1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.boss{
+    display: flex;
+    width: 700px;
+    margin-left: 250px;
+    margin-bottom: 30px;
+    border-bottom: rgb(17, 17, 17) solid 1px;
+    /* căn xung quanh hướng vô trong */
+    padding-bottom: 30px;
+
+}
+.trai{
+    width: 250px;
+    /* height: 200px; */
+    /* căn xung quanh hướng ra ngoài */
+    margin-right: 20px;
+}
+
+.phai{
+    width: 440px;
+}
+img.trai-1{
+    width: 100%;
+    height: 100%;
+}
+div.so1 h3{
+    color: saddlebrown;
+    /* đây là cách số 2 gọi css kiểu cha con */
+}
+div.so2 h3{
+    color: salmon;
+}
+div.so1 h3 i {
+    /* gọi css theo tầng
+    thẻ i là con của thẻ h3
+    thẻ h3 là con của thẻ div.so1
+    */
+    color: seagreen;
+}
+.bc9 {
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    /* phấn bố các khoảng cách còn thừa vào giữa */
+
+}
+
+.bc9 .bctrai{
+    width: 15%;
+    
+}
+.bc9 .bcgiua{
+    width: 60%;
+    display: flex;
+    
+}
+.bcgiua .bcgiua-1 {
+    width: 33.33%;
+}
+.bcgiua .bcgiua-2 {
+    width: 33.33%;
+}
+.bcgiua .bcgiua-3 {
+    width: 33.33%;
+}
+.bc9 .bcphai{
+    width: 20%;
+}
+.bc9 .bctrai img {
+    width: 100%;
+    /* kích thước của nó sẽ bằng 100% kích thước của class bố */
+}
+/* div.fa .fa-user {
+    font-size: 50px;
+    
+} */
+
+div.fa.fa-mobile{
+    /* gọi css trong 1 thẻ có nhiều class bằng dấu chấm */
+    font-size: 70px;
+}
+/* cách phân bố gọi class trong css */
+.pongchu{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* gọi chung css giúp tiết kiệm tài nguyên */
+.mauchu{
+    color: seagreen;
+}
+div.fa-user{
+    font-size: 50px;
+}
+.thekhongxuongdong{
+    display: block;
+    /* dùng để xuống dòng những thẻ không xuống xuống dòng */
+    margin-top: 200px;
+    /* dùng để hiểu được margin các loại cho thẻ không xuống dòng */
+}
+.thexuongdong{
+    display: inline;
+    /* dùng để ngăn không xuống dòng */
+}
+ul.danhsach{
+    list-style: none;
+    /* dùng để làm mất dấu chấm của thẻ li */
+    display: flex;
+    /* đây là cách làm menu từ thẻ ul danh sach */
+}

@@ -1,0 +1,184 @@
+/* menu popular anyone make */
+.menutop{
+    background-color: greenyellow;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    
+}
+
+ul.menungang{
+    list-style: none;
+    display: flex;
+    /* combo 3 thuộc tính căng giữa */
+    width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* text-align: center; 
+    dùng để set menu căn giữa k dùng thuộc tính display flex ở css này
+    */
+}
+
+/* ul.menungang li{
+    display: inline;
+    dùng để set menu căn giữa k dùng thuộc tính display flex ở css cha
+} */
+
+ul.menungang li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    /* thuộc tính trên dùng để ép chữ in hoa */
+    font-size: 13px;
+    /* padding: 1px  6px   1px   6px; 
+                top right buttop left
+       cách viết tắt cho pading ở dưới         
+    */
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    /* dùng để căn khoảng cách chữ của menu */
+    /* display: inline-block; 
+    dùng để set menu căn giữa k dùng thuộc tính display flex ở css cha
+    */
+
+    display: block;
+    /* nó không nhận thuộc tính trên thì dùng display block */
+    transition: 0.4s;
+    /* dùng để set thời gian di chuột qua các thẻ đổi màu */
+}
+
+ul.menungang li a:hover{
+    /* dùng để viết cho trạng thái di chuột vào menu css tự hiểu khi thêm :hover */
+    background-color: rgb(113, 177, 18);
+    padding-top: 3px;
+    padding-bottom: 9px;
+    
+}
+
+.block{
+    display: flex;
+    width: 930px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.big_block{
+    width: 600px;
+}
+.big_news_block{
+    width: 600px;
+    font-family: Segoe UI light;
+    font-size: 13px;
+    flex-wrap: wrap;
+    /* dùng để đóng gói khi chia cột quá dài so với mong muốn */
+    display: flex;
+
+}
+a.textpicture{
+    text-decoration: none;
+    color:gray;
+    font-size: 20px;
+}
+.buttom a.textpicture{
+    text-decoration: none;
+    color:gray;
+    font-size: 12px;
+}
+a.textpicture h2{
+    margin: 0;
+    padding: 0;
+}
+a.textpicture:hover{
+    color: greenyellow;
+}
+.top img{
+    width: 100%;
+    border-radius: 4px;
+}
+.top img:hover{
+    border: 2px solid gray;
+    /* dùng để tạo viền trong thẻ ảnh */
+
+}
+.big_news_block .buttom{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    
+    
+}
+
+.buttom .buttom-1{
+    width: 200px;
+}
+.buttom .buttom-2{
+    width: 200px;
+}
+.buttom .buttom-3{
+    width: 200px;
+}
+
+.buttom img{
+    width: 190px;
+    height: 130px;
+    border-radius: 4px;
+    /* dùng để bo tròn ảnh cho đẹp*/
+    
+}
+.buttom img:hover{
+    border: 2px solid gray;
+    /* dùng để tạo viền trong thẻ ảnh */
+}
+.small_block{
+    width: 300px;
+}
+.small_news_block{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+.small_news_block .left{
+    width: 60px;
+}
+.small_news_block .right{
+    width: 225px;
+    
+}
+.left img{
+    width: 100%;
+    border-radius: 4px;
+}
+.left img:hover{
+    border: 2px solid gray;
+    /* dùng để tạo viền trong thẻ ảnh */
+}
+.small_news_block .right a.a1{
+    text-decoration: none;
+    /* dùng để bỏ gạch chân của thẻ a */
+    color: rgb(29, 29, 29);
+    display: block;
+    /* dùng để xuống dòng */
+}
+a.a2{
+    text-decoration: none;
+    color: gray;
+    font-size: 11px;
+    padding-right: 7px;
+}
+span.minutes{
+    color: gray;
+    font-size: 11px;
+    padding-right: 7px;
+}
+a.a3{
+    color: gray;
+    text-decoration: none;
+    font-size: 11px;
+}

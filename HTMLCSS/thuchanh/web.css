@@ -1,0 +1,161 @@
+.nav{
+    height: 100px;
+    line-height: 100px;
+    
+}
+.container{
+    width: 90%;
+    margin: auto;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+ul li a {
+    color: black;
+        
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    display: block;
+    margin-right: 20px;
+   
+}    
+.item_2 {
+    flex: 1px;
+
+}
+@media   (min-width: 768px) and (max-width:992px){
+.nav{
+    background: whitesmoke;
+
+}
+.body{
+    width: 50%;
+    display: wrap;
+    flex-wrap: wrap;
+
+}
+.anhnhonho{
+    width: 50%;
+    display: wrap;
+    flex-wrap: wrap;
+}
+
+}
+@media   (max-width: 768px){
+.nav{
+        background: whitesmoke;
+}
+.item_2{
+    flex: 0;
+}
+.body{
+    
+}
+}
+/* new update */
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    height: 100%;
+    width: 100%;
+}
+.body .anhto{
+    width: 100%;
+}
+.body .anhto img{
+    width: 1350px;
+}
+.anhnho{
+    background: rgba(128, 128, 128, 0.123);
+    width: 1350px;
+}
+.tieude{
+    width: 1350px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;  
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+
+}
+.tieude p {
+    padding-right: 50px;
+}
+.anhnhonho{
+    height: 100%;
+    width: 1350px;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.anhnhotrai{
+    width: calc(33.33% - 13px);
+    flex: wrap;
+    padding-left: 20px;
+    
+    
+}
+.anhnhogiua{
+    width: calc(33.33% - 13px);
+    flex: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.anhnhophai{
+    width: calc(33.33% - 13px);
+    padding-right: 20px;
+    
+    
+}
+.anhnhophai img{
+    height: 91%;
+}
+.anhnho img{
+    width: 100%;
+    margin-top: 20px;
+}
+.foold{
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    background: rgba(128, 128, 128, 0.109);
+}
+._1{
+    width: calc(33.33% - 13px);
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase; 
+    padding: 20px 20px 50px 20px; 
+    
+
+}
+._2{
+    width: calc(33.33% - 13px);
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;  
+    padding: 20px 20px 50px 0px;
+}
+
+._3{
+    width: calc(33.33% - 13px);
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;  
+    padding: 20px 20px 50px 0px;
+    
+}
+

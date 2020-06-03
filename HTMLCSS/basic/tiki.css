@@ -1,0 +1,89 @@
+.nen{
+    background-color: rgb(244,244,244);
+}
+.block{
+    width: 1234px;
+    height: 545px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+.block_right{
+    width: 399px;
+    display: flex;
+    flex-wrap: wrap;
+    /* combo chia cột đóng gói */
+}
+.block_right_1{
+    width: 50%;
+    
+    
+}
+
+
+
+
+
+.block_bettwen{
+    width: 590px;
+}
+.bettwen_top{
+   
+    height: 365px;
+
+}
+.bettwen_buttom{
+    display: flex;
+    height: 180px;
+}
+.bettwen_buttom_1{
+    /* width: 50%; */
+    width: 295px;
+}
+/* img{
+    width: 100%;
+} */
+#sl .carousel-indicators{
+    /* đây là cách gọi css bằng ID */
+    /* cách 1 để ẩn  */
+    /* opacity: 0; */
+    /* cách 2 để ẩn */
+    /* visibility: hidden; */
+    /* cách 3 để ẩn */
+    display: none;
+}
+
+
+
+
+
+
+.block_left{
+    width: 245px;
+    
+}
+.block_left_1{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.block_left_icon{
+    width: 35px;
+    margin-bottom: 10px;
+    
+}
+.block_left_icon .fa{
+    font-size: 25px;
+}
+.block_left_td{
+    /* cách 1 */
+    /* width: 210px; */
+    /* cách 2 */
+    width: calc(100% - 35px);
+    padding-top: 3px;
+    
+}

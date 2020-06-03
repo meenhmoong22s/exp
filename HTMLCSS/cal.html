@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+  <ion-app>
+    <ion-tabs>
+      <ion-tab tab="home">
+        <h1>Home Content</h1>
+      </ion-tab>
+      <ion-tab tab="settings">
+        <h1>Settings Content</h1>
+      </ion-tab>
+
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-label>Home</ion-label>
+          <ion-icon name="home"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="settings">
+          <ion-label>Settings</ion-label>
+          <ion-icon name="settings"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-app>
+</body>
+
+</html>
+<IonHeader>
+  <IonToolbar color='primary'>
+    <IonTitle>NTP Calculator BMI (Body mass Index)</IonTitle>
+  </IonToolbar>
+</IonHeader>
+
+
+<IonContent className='ion-padding' color=''>
+
+  <IonGrid>
+    <IonRow>
+      <IonCol>
+        <IonItem>
+          <IonLabel position='floating'>
+            Your height
+    </IonLabel>
+
+          {/* bắt sự kiện */}
+          <IonInput ref={heightInputRef}></IonInput>
+        </IonItem>
+      </IonCol>
+    </IonRow>
+    <IonRow>
+      <IonCol>
+        <IonItem>
+          {/* position set định vị */}
+          <IonLabel position='floating'>
+            Your weight
+    </IonLabel>
+          <IonInput ref={weightInputRef}></IonInput>
+        </IonItem>
+      </IonCol>
+    </IonRow>
+    <BmiControls onCalculate={calulateNTP} onReset={resetInput}></BmiControls>
+    <BmiResult result={calulatedNtp} />
+
+    <IonRow>
+      <IonCol>
+        <IonItem color='tertiary'>
+          <IonLabel>BMI ≤ 15.9: Gầy độ III</IonLabel>
+        </IonItem>
+        <IonItem color='primary'>
+          <IonLabel>16 ≤ BMI => 17: Gầy độ II</IonLabel>
+        </IonItem>
+        <IonItem color='secondary'>
+          <IonLabel>17 ≤ BMI => 18.5: Gầy độ I</IonLabel>
+        </IonItem>
+        <IonItem color='success'>
+          <IonLabel>18.5 ≤ BMI => 25: Bình thường</IonLabel>
+        </IonItem>
+        <IonItem color='light'>
+          <IonLabel>25 ≤ BMI => 30: Thừa cân</IonLabel>
+        </IonItem>
+        <IonItem color='warning'>
+          <IonLabel>30 ≤ BMI => 35: Béo phì độ I</IonLabel>
+        </IonItem>
+        <IonItem color='danger'>
+          <IonLabel>35 ≤ BMI => 40: Béo phì độ II</IonLabel>
+        </IonItem>
+        <IonItem color='dark'>
+          <IonLabel>BMI >40: Béo phì độ III</IonLabel>
+        </IonItem>
+
+      </IonCol>
+    </IonRow>
+    <IonRow className='ion-margin-top'>
+      <IonCol>
+        <IonTitle>learn use IonLabel and IonInput</IonTitle>
+        <IonItem>
+          {/* position='floating' làm cho label có hiệu ứng thụt vô khi nhập */}
+          <IonLabel position='floating'>Username or Email</IonLabel>
+          <IonInput inputmode="email"></IonInput>
+        </IonItem>
+      </IonCol>
+      <IonCol>
+        <IonItem>
+          <IonLabel position='floating'>Enter a number</IonLabel>
+          <IonTextarea inputmode="numeric"></IonTextarea>
+        </IonItem>
+
+
+      </IonCol>
+      <IonCol>
+        <IonItem>
+          <IonLabel position='floating'>Enter search query (enterkeyhint là biến toàn cục có thể sử dụng như IonInput và
+      IonTextarea)</IonLabel>
+          <IonInput enterkeyhint="search" type="search"></IonInput>
+        </IonItem>
+      </IonCol>
+    </IonRow>
+  </IonGrid>
+
+</IonContent>
+
+<IonFooter>
+  {/* thanh ngang */}
+  <IonToolbar color='success'>
+    <IonTitle>
+      NTP
+</IonTitle>
+  </IonToolbar>
+</IonFooter>

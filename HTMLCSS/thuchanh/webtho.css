@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menutren{
+    height: 100px;
+    line-height: 100px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+ul{ 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.container ul li a{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-right: 20px;
+
+}
+.item_2{
+    flex: 1px;
+}
+
+@media   (min-width: 768px) and (max-width:992px){
+.menutren{
+    background: whitesmoke;
+}
+.tieudelon{
+    background-image: none;
+    background-size: none;
+    
+}
+
+}
+@media   (max-width: 768px){
+.menutren{
+    background: whitesmoke;
+}
+.item_2{
+    flex: 1;
+}
+   
+}
+.tieude{
+    
+}
+.tieudelon{
+    background-image: url("anhto.png");
+    background-size: cover;
+    height: 600px;
+    padding-top: 150px;
+    color:white;
+}
+.td{
+    margin-left: 70px;
+}
+.tieudenho{
+    background: rgba(128, 128, 128, 0.123);
+    color: black;
+    font-family: 'Times New Roman';
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.anh{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(128, 128, 128, 0.123);
+    padding-bottom: 20px;
+    
+}
+.anhnhotrai{
+    width: calc(33.33% - 13px);
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.anh img{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.anhnhophai img{
+    height: 91%;
+}
+
+.anhnhogiua{
+    width: calc(33.33% - 13px);
+    flex-wrap: wrap;
+    margin-right: 20px;
+    
+    
+}
+.anhnhophai{
+    width: calc(33.33% - 13px);
+    margin-right: 20px;
+    
+}
+.chantrang{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(128, 128, 128, 0.054);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+
+}
+._1{
+    width: calc(33.33% - 13px);
+    flex-wrap: wrap;
+    margin-left: 20px;
+
+}
+._2{
+    width: calc(33.33% - 13px);
+    flex-wrap: wrap;
+}
+._3{
+    width: calc(33.33% - 13px);
+}

@@ -1,0 +1,17 @@
+.myslide{
+    width: 500px;
+    height: 300px;
+}
+.myslide img{
+ width: 500px;
+ height: 300px;
+}
+
+.myslide .carousel-indicators{
+    /* cách 1 để ẩn  */
+    /* opacity: 0; */
+    /* cách 2 để ẩn */
+    /* visibility: hidden; */
+    /* cách 3 để ẩn */
+    display: none;
+}

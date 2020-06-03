@@ -1,0 +1,36 @@
+*{
+    color: blueviolet; 
+    /* gọi tất cả thẻ trong html */
+}
+#danhsach{
+    /* gọi id */
+    color: brown !important; 
+}
+
+.card{
+    /* gọi class */
+    color: chartreuse;
+}
+                                /* đặt biến trong CSS */
+:root{
+    /* lớp giả */
+    --text-color: rgb(217, 0, 255);
+    /* chỉ cần sữa màu của biến toàn cục */
+}
+h1 {
+    /* gọi thẻ */
+    color: var(--text-color);
+    /* đặt biến toàn cục tiện cho việc thay đổi sau này */
+}
+/* max-width: 739px = 46.1875em */
+@media ( max-width: 739px){
+    /* mobile : width < 740px*/
+};
+/* ( min-width: 740px = 46.25em) and (max-width: 1023px = 63.9375em) */
+@media ( min-width: 740px) and (max-width: 1023px){
+    /* tablet : width >= 740px and : width < 1024px*/
+};
+/* ( min-width: 1024px = 64em) */
+@media ( min-width: 1024px){
+    /* PC : width >= 1024px*/
+};

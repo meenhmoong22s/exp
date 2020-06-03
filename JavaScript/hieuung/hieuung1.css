@@ -1,0 +1,75 @@
+.card {
+    transition: 0.4s;
+}
+/* viet css cho id bat dau bang # */
+/* #kcd{
+    animation:chieu2 3s forwards!important; //dung de uu tien css id
+    //cach nay cua bac Viet day kha khac roi nen minh dung .move2 ghi bang class khoi phai suy nghi uu tien (!important)
+
+}
+@-webkit-keyframes chieu2{
+    100% {transform: translateX(0) translateY(0);}
+    90% {transform: translateX(200px) translateY(0);}
+    80% {transform: translateX(200px) translateY(200px);}
+    50% {transform: translateX(500px) translateY(200px);}
+    25% {transform: translateX(500px) translateY(500px);}
+    0% {transform: translateX(700px) translateY(500px);}
+} */
+.move2{
+    animation:chieu2 3s forwards;
+
+}
+@-webkit-keyframes chieu2{
+    100% {transform: translateX(0) translateY(0);}
+    90% {transform: translateX(200px) translateY(0);}
+    80% {transform: translateX(200px) translateY(200px);}
+    50% {transform: translateX(500px) translateY(200px);}
+    25% {transform: translateX(500px) translateY(500px);}
+    0% {transform: translateX(700px) translateY(500px);}
+}
+
+.move1{
+    animation:chieu1 3s forwards;
+}
+@-webkit-keyframes chieu1{
+    0% {transform: translateX(0) translateY(0);}
+    25% {transform: translateX(200px) translateY(0);}
+    50% {transform: translateX(200px) translateY(200px);}
+    80% {transform: translateX(500px) translateY(200px);}
+    90% {transform: translateX(500px) translateY(500px);}
+    100% {transform: translateX(700px) translateY(500px);}
+}
+
+.diphai {
+    /* transform:translateX(300px); // cach1 co chuyen dong 2 chieu */
+    animation: sangphai 2s forwards;
+    /*cach2 khong co chuyen dong 2 chieu nhung tao duoc chuyen dong nhieu thao tac hon, chuyen dong tu do hon */
+}
+
+@-webkit-keyframes sangphai {
+    /*HieuUng animation*/
+    /* from {transform: translateX(0);}   cach viet basic
+    to {transform: translateX(300px);} */
+    /* cach viet nang cao */
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        margin-top: 0;
+    }
+    40% {
+        transform: translateX(400px);
+        opacity: 1;
+        margin-top: 0;
+    }
+    60% {
+        transform: translateX(400px);
+        opacity: 1;
+        margin-top: 200px;
+    }
+    100% {
+        transform: translateX(600px);
+        opacity: 0;
+        margin-top: 200px;
+    }
+
+}
